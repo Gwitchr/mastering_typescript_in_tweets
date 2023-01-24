@@ -16,6 +16,6 @@ Considero que no hay tanto contenido de buena calidad en español y es important
 
 ## To Do's
 
-[x] Los links de los tuits pasarlos al repo
-[x] Terminar el README
-[x] Organizar los ejercicios en carpetas y que tengan sentido
+- [x] Los links de los tuits pasarlos al repo
+- [x] Terminar el README
+- [x] Organizar los ejercicios en carpetas y que tengan sentido
