@@ -4,7 +4,9 @@ function diferirEjecucion(callback: () => void) {
     console.log(`timeout ⚠️`);
   }
   console.log(`Ejecutando Timeout ⚠️`);
+
   setTimeout(ejecutarDemoraa, 1000);
+
   console.log(`Ejecutao ⚠️`);
 }
 
