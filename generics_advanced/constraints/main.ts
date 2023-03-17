@@ -22,5 +22,7 @@ const res = conc.concatenar([
   "maaaaaaambo 💣",
 ]);
 console.log(`${res} ⚠️`); // uno, 2, tres, cuatro, cinco, maaaaaaambo 💣 ⚠️
+
 const res2 = conc.concatenar([3, 4, 2, 5]);
+
 console.log(`${res2} ⚠️`); // 3, 4, 2, 5 ⚠️
