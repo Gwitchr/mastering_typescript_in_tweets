@@ -8,16 +8,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const delayed_1 = require("./delayed");
-function usarPromesaTardia() {
-    return __awaiter(this, void 0, void 0, function* () {
-        console.log(`Antes de la ejecución ⚠️`);
-        yield (0, delayed_1.promesaTardia)();
-        console.log(`Después de la ejecución ⚠️`);
+function promesaConValores() {
+    return new Promise((resolve, _reject) => {
+        resolve(["1", "2", "3", "Maaaaaambo"]);
     });
 }
-usarPromesaTardia();
-// Antes de la ejecución ⚠️
-// Promesa resuelta después de 1000ms 😎 ⚠️
-// Después de la ejecución ⚠️
+function obetnerValoresDePromesa() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const cuenta = yield promesaConValores();
+        for (let n in cuenta) {
+            console.log(`${cuenta[n]} ⚠️`);
+        }
+    });
+}
+obetnerValoresDePromesa();

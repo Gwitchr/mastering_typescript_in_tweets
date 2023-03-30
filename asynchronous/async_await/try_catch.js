@@ -10,14 +10,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const delayed_1 = require("./delayed");
-function usarPromesaTardia() {
+function llamarPromesaFallida() {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log(`Antes de la ejecución ⚠️`);
-        yield (0, delayed_1.promesaTardia)();
-        console.log(`Después de la ejecución ⚠️`);
+        try {
+            console.log(`Llamando 📞... ⚠️`);
+            yield (0, delayed_1.promesaFallida)();
+        }
+        catch (error) {
+            console.log(`Todo me sale mal 🤡 ${error === null || error === void 0 ? void 0 : error.toString()} ⚠️`);
+        }
     });
 }
-usarPromesaTardia();
-// Antes de la ejecución ⚠️
-// Promesa resuelta después de 1000ms 😎 ⚠️
-// Después de la ejecución ⚠️
+llamarPromesaFallida();
+// Llamando 📞... ⚠️
+// Promesa fallida después de 1000ms 😭 ⚠️
+// Todo me sale mal 🤡 muy mal ⚠️

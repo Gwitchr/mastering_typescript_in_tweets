@@ -8,10 +8,10 @@ export function promesaTardia(): Promise<void> {
 }
 
 export function promesaFallida(): Promise<void> {
-  return new Promise((_resolve: () => void, reject: () => void) => {
+  return new Promise((_resolve: () => void, reject: (err: string) => void) => {
     setTimeout(() => {
       console.log(`Promesa fallida después de 1000ms 😭 ⚠️`);
-      reject();
+      reject("muy mal");
     }, 1000);
   });
 }
