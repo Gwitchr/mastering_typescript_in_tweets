@@ -13,3 +13,7 @@ async function obetnerValoresDePromesa() {
   }
 }
 obetnerValoresDePromesa();
+// 1 ⚠️
+// 2 ⚠️
+// 3 ⚠️
+// Maaaaaambo ⚠️
