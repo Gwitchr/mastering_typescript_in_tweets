@@ -27,3 +27,5 @@ ClaseConMultiplesDecoradores = __decorate([
     segundoDecorador
 ], ClaseConMultiplesDecoradores);
 exports.ClaseConMultiplesDecoradores = ClaseConMultiplesDecoradores;
+// Decorador simple ejecutado ⚠️
+// Segundo Decorador ejecutado ⚠️
