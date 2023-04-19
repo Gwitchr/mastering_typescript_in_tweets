@@ -18,6 +18,7 @@ class ClaseConAuditor {
   @decoradorAuditor
   print(msj1: string, msj2: string) {
     console.log(`mensaje 1:${msj1} ⚠️`);
+
     console.log(`mensaje 2:${msj2} ⚠️`);
   }
 }
