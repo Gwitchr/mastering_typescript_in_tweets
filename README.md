@@ -1,4 +1,4 @@
-# Mastering Typescript by Van Vanderkam en tuits (by @gwitchr)
+# Mastering Typescript by Nathan Rozentals en tuits (by @gwitchr)
 
 Ejercicio de escritura propio, ¡ojalá le sirva a alguien!
 
