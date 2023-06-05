@@ -1,0 +1,1 @@
+const booooooleano: NumeroOBooleanoOString<string> = "👻";
